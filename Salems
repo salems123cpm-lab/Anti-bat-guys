@@ -138,7 +138,7 @@ LocalPlayer.CharacterAdded:Connect(function(char)
 end)
 
 local SalemsAntiBatGui = Instance.new("ScreenGui")
-SalemsAntiBatGui.Name = "AspectAntiBatGui"
+SalemsAntiBatGui.Name = "SalemsAntiBatGui"
 SalemsAntiBatGui.IgnoreGuiInset = true
 SalemsAntiBatGui.ResetOnSpawn = false
 SalemsAntiBatGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
