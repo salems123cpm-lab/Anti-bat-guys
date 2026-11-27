@@ -5,7 +5,7 @@ local TweenService = game:GetService("TweenService")
 local HttpService = game:GetService("HttpService")
 local LocalPlayer = Players.LocalPlayer
 
-local CONFIG_FILE = "AspectAntiBat.json"
+local CONFIG_FILE = "SALEMSAntiBat.json"
 
 local config = {
     antiBat = false,
@@ -137,12 +137,12 @@ LocalPlayer.CharacterAdded:Connect(function(char)
     end
 end)
 
-local AspectAntiBatGui = Instance.new("ScreenGui")
-AspectAntiBatGui.Name = "AspectAntiBatGui"
-AspectAntiBatGui.IgnoreGuiInset = true
-AspectAntiBatGui.ResetOnSpawn = false
-AspectAntiBatGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-AspectAntiBatGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
+local SalemsAntiBatGui = Instance.new("ScreenGui")
+SalemsAntiBatGui.Name = "AspectAntiBatGui"
+SalemsAntiBatGui.IgnoreGuiInset = true
+SalemsAntiBatGui.ResetOnSpawn = false
+SalemsAntiBatGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SalemsAntiBatGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
 
 local Main = Instance.new("Frame")
 Main.Name = "Main"
@@ -156,7 +156,7 @@ Main.Size = UDim2.new(0, 260, 0, 186)
 Main.BackgroundColor3 = Color3.fromRGB(10, 10, 14)
 Main.BorderSizePixel = 0
 Main.Active = true
-Main.Parent = AspectAntiBatGui
+Main.Parent = SalemsAntiBatGui
 
     local UICorner = Instance.new("UICorner")
     UICorner.Name = "UICorner"
@@ -375,7 +375,7 @@ Main.Parent = AspectAntiBatGui
     Discord.Position = UDim2.new(0, 0, 0, 160)
     Discord.Size = UDim2.new(1, 0, 0, 18)
     Discord.BackgroundTransparency = 1
-    Discord.Text = "https://discord.gg/TBBAUZu8cW"
+    Discord.Text = "https://discord.gg/FCbSj2ES4"
     Discord.TextColor3 = Color3.fromRGB(180, 140, 255)
     Discord.TextSize = 11
     Discord.Font = Enum.Font.GothamBold
@@ -464,7 +464,7 @@ Discord.InputBegan:Connect(function(input)
     if input.UserInputType == Enum.UserInputType.MouseButton1 then
         pcall(function()
             if setclipboard then
-                setclipboard("https://discord.gg/TBBAUZu8cW")
+                setclipboard("https://discord.gg/FCbSj2ES4")
             end
         end)
     end
